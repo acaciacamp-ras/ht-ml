@@ -6,152 +6,165 @@
     <title>Acacia Camp</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    <link rel="stylesheet" href="./css/regester-login.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-
-  <div class="bg-dark px-4 py-5 my-5 text-center">
+    <div class="bg-dark px-4 py-5 my-5 text-center">
         <img class="d-block mx-auto mb-4" src="logo.svg" alt="" width="72" height="57">
         <h1 class="display-5 fw-bold">Acacia Camp</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4 text-success">Acacia Camp Where The Desert Blooms</p>
+            <p class="lead mb-4 text-success">Acacia Camp Where The Desert Blooms</p>
         </div>
-  </div>
-  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-      <button type="button" class="btn btn-primary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#reservationmodal">Book</button>
-      <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Quick Links</button>
-      <div class="bg-secondary offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-              <div class="offcanvas-header">
+    </div>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#reservationmodal">Book</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Quick Links</button>
+        <div class="bg-secondary offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sign Up Now</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-            <div class="offcanvas-body">
-  <!-- Registration Form -->
-  <div class="auth-container">
-    <div class="auth-image">
-      <div class="auth-form-box">
-        <div class="auth-form">
-          <h2>Register</h2>
-          <div class="auth-input-box">
-            <input type="text" id="auth-username" required />
-            <label for="auth-username">Username</label>
-          </div>
-          <div class="auth-input-box">
-            <input type="email" id="auth-email" required />
-            <label for="auth-email">Email</label>
-          </div>
-          <div class="auth-input-box">
-            <input type="password" id="auth-password" required />
-            <label for="auth-password">Password</label>
-          </div>
-          <div class="auth-group">
-            <a href="#">Forgot Password</a>
-            <a href="#" id="auth-goToLogin">Sign In</a>
-          </div>
-          <button id="auth-registerButton" class="auth-button">Sign up</button>
-          <p id="auth-registerMessage" class="auth-error"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Login Form -->
-  <div class="auth-container" id="auth-loginContainer" style="display: none;">
-    <div class="auth-image">
-      <div class="auth-form-box">
-        <div class="auth-form">
-          <h2>Login</h2>
-          <div class="auth-input-box">
-            <input type="text" id="auth-loginEmail" required />
-            <label for="auth-loginEmail">Email</label>
-          </div>
-          <div class="auth-input-box">
-            <input type="password" id="auth-loginPassword" required />
-            <label for="auth-loginPassword">Password</label>
-          </div>
-          <div class="auth-group">
-            <a href="#">Forgot Password</a>
-            <a href="#" id="auth-goToRegister">Sign Up</a>
-          </div>
-          <button id="auth-loginButton" class="auth-button">Sign In</button>
-          <p id="auth-loginMessage" class="auth-error"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Protected Route -->
-  <div class="auth-container" id="auth-protectedContainer" style="display: none;">
-    <div class="auth-image">
-      <div class="auth-form-box">
-        <div class="auth-form">
-          <h2>Protected Route</h2>
-          <button id="auth-protectedButton" class="auth-button">Get Protected Data</button>
-          <p id="auth-protectedMessage" class="auth-success"></p>
-        </div>
-      </div>
-    </div>
-  </div>
             </div>
-      </div>
-  </div>
-  <div class="modal fade" id="reservationmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
+            <div class="offcanvas-body">
+                <!-- Registration Form -->
+                <div class="auth-container">
+                    <div class="auth-image">
+                        <div class="auth-form-box">
+                            <div class="auth-form">
+                                <h2>Register</h2>
+                                <div class="auth-input-box">
+                                    <input type="text" id="auth-username" required />
+                                    <label for="auth-username">Username</label>
+                                </div>
+                                <div class="auth-input-box">
+                                    <input type="email" id="auth-email" required />
+                                    <label for="auth-email">Email</label>
+                                </div>
+                                <div class="auth-input-box">
+                                    <input type="password" id="auth-password" required />
+                                    <label for="auth-password">Password</label>
+                                    <span class="password-toggle" onclick="togglePasswordVisibility('auth-password')">👁️</span>
+                                </div>
+                                <div class="auth-group">
+                                    <a href="#">Forgot Password</a>
+                                    <a href="#" id="auth-goToLogin">Sign In</a>
+                                </div>
+                                <button id="auth-registerButton" class="auth-button">Sign up</button>
+                                <p id="auth-registerMessage" class="auth-error"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Login Form -->
+                <div class="auth-container" id="auth-loginContainer" style="display: none;">
+                    <div class="auth-image">
+                        <div class="auth-form-box">
+                            <div class="auth-form">
+                                <h2>Login</h2>
+                                <div class="auth-input-box">
+                                    <input type="text" id="auth-loginEmail" required />
+                                    <label for="auth-loginEmail">Email</label>
+                                </div>
+                                <div class="auth-input-box">
+                                    <input type="password" id="auth-loginPassword" required />
+                                    <label for="auth-loginPassword">Password</label>
+                                    <span class="password-toggle" onclick="togglePasswordVisibility('auth-loginPassword')">👁️</span>
+                                </div>
+                                <div class="auth-group">
+                                    <a href="#">Forgot Password</a>
+                                    <a href="#" id="auth-goToRegister">Sign Up</a>
+                                </div>
+                                <button id="auth-loginButton" class="auth-button">Sign In</button>
+                                <p id="auth-loginMessage" class="auth-error"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Protected Route -->
+                <div class="auth-container" id="auth-protectedContainer" style="display: none;">
+                    <div class="auth-image">
+                        <div class="auth-form-box">
+                            <div class="auth-form">
+                                <h2>Protected Route</h2>
+                                <button id="auth-protectedButton" class="auth-button">Get Protected Data</button>
+                                <p id="auth-protectedMessage" class="auth-success"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="reservationmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
                     <button type="button" class="btn-close ml-3 mt-3 mb-auto mr-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="modal-body">
-                    <div class="container mt-5">
-                      <!-- Check-In Check-Out Dates-->
-                      <label for="date-range-picker" class="form-label">Select Your Prefered Dates</label>
-                      <input type="text" id="date-range-picker" class="form-control" />
+                        <div class="container mt-5">
+                            <!-- Check-In Check-Out Dates -->
+                            <label for="date-range-picker" class="form-label">Select Your Preferred Dates</label>
+                            <input type="text" id="date-range-picker" class="form-control" />
+                        </div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="room1">Bangalow</option>
+                            <option value="room2">Double Room</option>
+                            <option value="room3">Chilling Cabin</option>
+                            <option value="room4">Family Suite</option>
+                        </select>
+                        <div>
+                            <!-- Number of Guests Input -->
+                            <label for="guest-input" class="form-label">Number Of Guests</label>
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary" type="button" id="decrease-guest">-</button>
+                                <input type="number" class="form-control" id="guest-input" value="2" min="1">
+                                <button class="btn btn-outline-secondary" type="button" id="increase-guest">+</button>
+                            </div>
+
+                            <!-- Number of Rooms Input -->
+                            <label for="room-input" class="form-label">Number Of Rooms</label>
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary" type="button" id="decrease-room">-</button>
+                                <input type="number" class="form-control" id="room-input" value="1" min="1">
+                                <button class="btn btn-outline-secondary" type="button" id="increase-room">+</button>
+                            </div>
+                        </div>
+                        <!-- Message Field -->
+                        <div class="mb-3">
+                            <label for="formControlTextarea1" class="form-label">Tell Us Something Else You Like</label>
+                            <textarea class="form-control" id="formControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <!-- Submit Button -->
+                        <button type="button" class="btn btn-info" id="bookButton">BOOK</button>
                     </div>
-                    <select class="form-select" aria-label="Default select example">
-                      <option value="room1">Bangalow</option>
-                      <option value="room2">Double Room</option>
-                      <option value="room3">Chilling Cabin</option>
-                      <option value="room4">Family Suite</option>
-                    </select> 
-                    <div>
-                      <!-- Number of Guests Input -->
-                      <label for="guest-input" class="form-label">Number Of Guests</label>
-                      <div class="input-group">
-                          <button class="btn btn-outline-secondary" type="button" id="decrease-guest">-</button>
-                          <input type="number" class="form-control" id="guest-input" value="2" min="1">
-                          <button class="btn btn-outline-secondary" type="button" id="increase-guest">+</button>
-                      </div>
-                    
-                      <!-- Number of Rooms Input -->
-                      <label for="room-input" class="form-label">Number Of Rooms</label>
-                      <div class="input-group">
-                          <button class="btn btn-outline-secondary" type="button" id="decrease-room">-</button>
-                          <input type="number" class="form-control" id="room-input" value="1" min="1">
-                          <button class="btn btn-outline-secondary" type="button" id="increase-room">+</button>
-                      </div>
-                    </div>
-                      <!-- Massege Feilds -->
-                    <div class="mb-3">
-                      <label for="formControlTextarea1" class="form-label">Tell Us Somthing Else You Like</label>
-                      <textarea class="form-control" id="formControlTextarea1" rows="3"></textarea>
-                    </div>
-                      <!-- Sumbit Button-->
-                    <button type="button" class="btn btn-info">BOOK</button>
-                    </div>
-                  </div>
                 </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div>   
-    <div class="container mt-5">
-      <div class="row" id="galleryRow"></div>
-  </div>
-  </div>  
+
+    <!-- Gallery Section -->
+<div class="container mt-5">
+    <div class="row" id="natureGallery"></div>
+</div>
+
+<div class="container mt-5">
+    <div class="row" id="adventureGallery"></div>
+</div>
+
+<div class="container mt-5">
+    <div class="row" id="relaxationGallery"></div>
+</div>
+
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment/moment.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
-    <script src="./js/regester-login.js"></script>
-  
+    <script src="./assets/js/auth.js"></script>
+    <script src="./assets/js/booking.js"></script>
+    <script src="./assets/js/gallery.js"></script>
 </body>
 </html>
